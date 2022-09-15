@@ -7,8 +7,8 @@ import { CATEGORIES } from "./categories";
 const Home = () => {
   return (
     <div>
-      <Outlet />
       <CategoryList categories={CATEGORIES} />
+      <Outlet />
     </div>
   );
 };
