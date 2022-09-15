@@ -1,8 +1,13 @@
-import CategoryList from "./category-list/category-list.component";
-import { CATEGORIES } from "./categories";
+import { Route, Routes } from "react-router-dom";
+
+import Home from "./routes/home/home.component";
 
 const App = () => {
-  return <CategoryList categories={CATEGORIES} />;
+  return (
+    <Routes>
+      <Route path="/home" element={<Home />} />
+    </Routes>
+  );
 };
 
 export default App;
